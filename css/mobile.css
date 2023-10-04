@@ -10,7 +10,7 @@ img {
 }
 
 /* ROOT */
-:root{
+:root {
     /* common */
     --banner-heigth: 16vw;
     --border-style: 1px solid #b0b0b0;
@@ -24,8 +24,6 @@ img {
     /* notification adv */
     --notif-adv-primary-color:#8edafc;
     --notif-adv-secondary-color: #fff;
-
-
 }
 
 /* UTILITIES */
@@ -56,7 +54,7 @@ img {
 }
 
 /* framework */
-.wd100{
+.wd100 {
     width: 100%;
 }
 
@@ -78,7 +76,7 @@ img {
 /* /debug */
 
 /* CONTACTS AREA */
-.contacts-area{
+.contacts-area {
     display: none;
 }
 

@@ -1,5 +1,5 @@
 /* ROOT */
-:root{
+:root {
     /* COMMON */
     --avatar-wd: 5vw;
     --banner-heigth: 6vw;
@@ -22,7 +22,7 @@ body {
         #009688 20vh,
         #d9dbd4 20vh,
         #d9dbd4 100vh
-      );
+      )
 }
 
 .wrapper {
@@ -37,11 +37,9 @@ body {
 }
 
 /* CONTACTS AREA */
-.contacts-area{
+.contacts-area {
     width: var(--wd-contacts-area);
 }
-
-/* user section */
 
 /* user section */
 .user-section {
@@ -100,13 +98,10 @@ body {
     background-color: aqua;
 }
 
-
-
 /* CHAT AREA */
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
     height: 100%;
-
 }
 
 .contact-avatar {
