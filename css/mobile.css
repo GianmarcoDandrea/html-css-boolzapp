@@ -81,7 +81,6 @@ input:focus-visible{
 
 .contact-photo img {
     width: 100%;
-    aspect-ratio: 1/1;
     border-radius: 50%;
 }
 
@@ -101,14 +100,14 @@ input:focus-visible{
 }
 
 .user-photo img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
+    display: none;
 }
 
 .user-options {
     display: none;
 }
+
+
 
 /* CHAT AREA */
 .chat-area {

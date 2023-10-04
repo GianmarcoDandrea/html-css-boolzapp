@@ -31,15 +31,19 @@
     background-color: var(--primary-grey);
 }
 
-.user-avatar {
-    display: flex;
+.user-photo img {
+    display: block;
     width: 100%;
-    /* debug */
-    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 
 /* notif adv */
 .notif-adv{
+    display: none;
+}
+
+/* search bar */
+.contact-src-bar {
     display: none;
 }
 

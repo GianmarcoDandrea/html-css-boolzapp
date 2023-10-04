@@ -2,19 +2,29 @@
 :root {
     /* COMMON */
     --avatar-wd: 4vw;
-    --banner-heigth: 5vw;
-    --input-msg-heigth: 4vw;
-    --input-msg-pd: 0.5rem 2rem;
-    --user-section-btn-color: #b1b1b1;
-    --user-section-btn-font-size: 1.5rem;
-    --notif-adv-active-link: #5e5e5e;
 
     /* contacts area */
     --wd-contacts-area:40%;
 
+    /* user section */
+    --user-section-btn-color: #b1b1b1;
+    --user-section-btn-font-size: 1.5rem;
+
     /* notification adv */
     --notif-dv-pd: 0.4rem 0.7rem;
     --notif-adv-ico-wd: 4vw;
+    --notif-adv-active-link: #5e5e5e;
+
+    /* search bar */
+    --src-bar-pd: 0.5rem;
+    --src-bar-icon-font-size: 1rem;
+    --contact-src-bar-heigth: 3.5vw;
+
+    --banner-heigth: 5vw;
+    --input-msg-heigth: 4vw;
+    --input-msg-pd: 0.5rem 2rem;
+
+
 }
 
 /* COMMON */
@@ -92,9 +102,41 @@ body {
     color: var(--notif-adv-active-link);
 }
 
+/* search bar */
+.contact-src-bar {
+    display: flex;
+    width: 100%;
+    padding: var(--src-bar-pd);
+    background-color: var(--primary-grey);
+    height: var(--contact-src-bar-heigth);
+}
+
+.src-bar-input {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.src-bar-input button,
+.src-bar-input input {
+    background: transparent;
+    border: none;
+    font-size: var(--src-bar-icon-font-size) ;
+    /* padding: 0.5rem 1rem; */
+}
+
+.src-bar-input button{
+    padding-right: 1rem;
+}
+
+.src-bar-input input {
+    width: 70%;
+}
+
 /* contact section */
 .contacts {
-    height: calc(95% - var(--avatar-wd) - var(--notif-adv-ico-wd));
+    height: calc(95% - var(--avatar-wd) - var(--notif-adv-ico-wd) - var(--contact-src-bar-heigth));
 }
 .contacts-msg {
     display: flex;
