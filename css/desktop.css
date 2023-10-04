@@ -1,5 +1,8 @@
 /* ROOT */
 :root{
+    /* COMMON */
+    --avatar-wd:16%;
+
     /* contacts area */
     --wd-contacts-area:40%;
 
@@ -14,7 +17,7 @@ body {
     height: 100vh;
     background: linear-gradient(
         to bottom,
-        #009688 0%,
+        #009688 0,
         #009688 20vh,
         #d9dbd4 20vh,
         #d9dbd4 100vh
@@ -41,13 +44,6 @@ body {
 
 /* user section */
 
-/* CHAT AREA */
-.chat-area {
-    width: calc(100% - var(--wd-contacts-area));
-    height: 100%;
-    background-color: yellow;
-}
-
 /* user section */
 .user-section {
     background-color:var(--primary-grey);
@@ -56,7 +52,7 @@ body {
 
 .user-avatar {
     display: flex;
-    width: 16%;
+    width: var(--avatar-wd);
 }
 
 .user-options {
@@ -87,11 +83,29 @@ body {
     background-color: var(--notif-adv-secondary-color);
 }
 
+/* contact section */
+.contacts {
+    height: calc(100% - var(--avatar-wd) - var(--notif-adv-ico-wd) + 1.9rem);
+}
+.contacts-msg {
+    display: flex;
+}
+
+.contact-photo {
+    width: var(--avatar-wd)
+}
+
+.contact-dets {
+    width: calc(96% - var(--avatar-wd));
+    /* debug */
+    background-color: aqua;
+}
 
 
 
 /* CHAT AREA */
 .chat-area {
+    width: calc(100% - var(--wd-contacts-area));
     height: 100%;
     background-color: yellow;
 }

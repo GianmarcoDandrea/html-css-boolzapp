@@ -2,6 +2,7 @@
 :root{
     /* framework */
     --user-avatar-pd: 0.4rem 0.7rem;
+    --border-style: 1px solid grey;
 
     /* contacts area */
     --wd-contacts-area:12.5%;
@@ -9,7 +10,6 @@
 }
 
 /* COMMON */
-
 
 /* CONTACTS AREA */
 .contacts-area{
@@ -22,19 +22,32 @@
 
 /* user section */
 .user-section{
+    padding: var(--user-avatar-pd);
     display: block;
     background-color:var(--primary-grey);
 }
 .user-avatar {
     display: flex;
     width: 100%;
-    padding: var(--user-avatar-pd);
     /* debug */
     aspect-ratio: 1/1;
 }
 
 /* contacts section */
+.contacts {
+    width: 100%;
+    height: calc(100% - var(--wd-contacts-area));
+    overflow-y: scroll;
+}
 
+.contacts-msg {
+    padding: var(--user-avatar-pd);
+    border-bottom: var(--border-style);
+}
+
+.contacts-dets {
+    display: none;
+}
 
 /* CHAT AREA */
 .chat-area {
