@@ -1,0 +1,67 @@
+/* RESET */
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+/* ROOT */
+:root{
+    /* palette */
+    --primary-grey:#eaeaea;
+
+    /* framwork */
+    --wd100: 100%;
+    --pd1rem: 1rem;
+
+    /* user section */
+    
+}
+
+/* UTILITIES */
+
+.flex-display {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* COMMON */
+.wrapper,
+.app-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.app-container {
+
+}
+
+/* CONTACTS AREA */
+.contacts-area{
+    display: none;
+}
+
+/* user section */
+.user-section {
+    width: var(--wd100);
+    padding: var(--pd1rem);
+    background-color:var(--primary-grey) ;
+}
+
+.user-avatar {
+    width: 30%;
+}
+
+/* CHAT AREA */
+.chat-area {
+    width: var(--wd100);
+    height: 100%;
+    background-color: yellow;
+}
