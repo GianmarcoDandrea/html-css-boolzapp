@@ -2,6 +2,10 @@
 :root{
     /* contacts area */
     --wd-contacts-area:40%;
+
+    /* notification adv */
+    --notif-dv-pd: 0.4rem 0.7rem;
+    --notif-adv-ico-wd: 14%;
 }
 
 /* COMMON */
@@ -42,5 +46,52 @@ body {
     width: calc(100% - var(--wd-contacts-area));
     height: 100%;
     background-color: yellow;
+}
 
+/* user section */
+.user-section {
+    background-color:var(--primary-grey);
+    display: flex;
+}
+
+.user-avatar {
+    display: flex;
+    width: 16%;
+}
+
+.user-options {
+    display: block;
+    width: 20%;
+    /* debug */
+    height: 70px;
+    background-color: aqua;
+}
+
+/* notification adv */
+.notif-adv {
+    display: flex;
+    background-color: var(--notif-adv-primary-color);
+    padding: var(--notif-dv-pd);
+}
+
+.notif-adv-ico {
+    width: var(--notif-adv-ico-wd);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--notif-adv-secondary-color) ;
+}
+
+.notif-adv-content {
+    width: calc(97% - var(--notif-adv-ico-wd));
+    /* debug */
+    background-color: var(--notif-adv-secondary-color);
+}
+
+
+
+
+/* CHAT AREA */
+.chat-area {
+    height: 100%;
+    background-color: yellow;
 }

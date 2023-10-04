@@ -13,13 +13,13 @@ img {
 :root{
     /* palette */
     --primary-grey:#eaeaea;
+    --text-color-grey:#fff;
 
-    /* framwork */
-    --wd100: 100%;
-    --pd1rem: 1rem;
+    /* notification adv */
+    --notif-adv-primary-color:#8edafc;
+    --notif-adv-secondary-color: #fff;
 
-    /* user section */
-    
+
 }
 
 /* UTILITIES */
@@ -28,8 +28,22 @@ img {
     display: flex;
 }
 
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
 .space-between {
     justify-content: space-between;
+}
+
+/* framework */
+.wd100{
+    width: 100%;
 }
 
 /* COMMON */
@@ -39,9 +53,15 @@ img {
     height: 100vh;
 }
 
-.app-container {
-
+/* debug */
+.user-photo {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    /* debug */
+    background-color: aqua;
 }
+/* /debug */
 
 /* CONTACTS AREA */
 .contacts-area{
@@ -50,18 +70,15 @@ img {
 
 /* user section */
 .user-section {
-    width: var(--wd100);
-    padding: var(--pd1rem);
-    background-color:var(--primary-grey) ;
+    display: none;
 }
 
-.user-avatar {
-    width: 30%;
+.user-options {
+    display: none;
 }
 
 /* CHAT AREA */
 .chat-area {
-    width: var(--wd100);
     height: 100%;
     background-color: yellow;
 }
