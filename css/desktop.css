@@ -1,14 +1,15 @@
 /* ROOT */
 :root{
     /* COMMON */
-    --avatar-wd:16%;
+    --avatar-wd: 5vw;
+    --banner-heigth: 6vw;
 
     /* contacts area */
     --wd-contacts-area:40%;
 
     /* notification adv */
     --notif-dv-pd: 0.4rem 0.7rem;
-    --notif-adv-ico-wd: 14%;
+    --notif-adv-ico-wd: 4vw;
 }
 
 /* COMMON */
@@ -38,8 +39,6 @@ body {
 /* CONTACTS AREA */
 .contacts-area{
     width: var(--wd-contacts-area);
-    /* debug */
-    background-color: red;
 }
 
 /* user section */
@@ -59,7 +58,7 @@ body {
     display: block;
     width: 20%;
     /* debug */
-    height: 70px;
+    height: 5vw;
     background-color: aqua;
 }
 
@@ -85,7 +84,7 @@ body {
 
 /* contact section */
 .contacts {
-    height: calc(100% - var(--avatar-wd) - var(--notif-adv-ico-wd) + 1.9rem);
+    height: calc(95% - var(--avatar-wd) - var(--notif-adv-ico-wd));
 }
 .contacts-msg {
     display: flex;
@@ -107,5 +106,10 @@ body {
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
     height: 100%;
-    background-color: yellow;
+
+}
+
+.contact-avatar {
+    width: var(--avatar-wd);
+    padding: 0;
 }

@@ -1,8 +1,7 @@
 /* ROOT */
 :root{
-    /* framework */
-    --user-avatar-pd: 0.4rem 0.7rem;
-    --border-style: 1px solid grey;
+    /* common */
+    --banner-heigth: 13vw;
 
     /* contacts area */
     --wd-contacts-area:12.5%;
@@ -15,13 +14,13 @@
 .contacts-area{
     width: var(--wd-contacts-area);
     height: 100%;
-    display: block;
-    /* debug*/
-    background-color: red;
+    display:block;
+    background-color: var(--color-white);
 }
 
 /* user section */
 .user-section{
+    height: var(--banner-heigth);
     padding: var(--user-avatar-pd);
     display: block;
     background-color:var(--primary-grey);
@@ -53,5 +52,8 @@
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
     height: 100%;
-    background-color: yellow;
+}
+
+.contact-avatar {
+    padding: var(--user-avatar-pd);
 }

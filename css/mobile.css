@@ -11,9 +11,15 @@ img {
 
 /* ROOT */
 :root{
+    /* common */
+    --banner-heigth: 16vw;
+    --border-style: 1px solid #b0b0b0;
+    --user-avatar-pd: 0.4rem 0.7rem;
+    
     /* palette */
     --primary-grey:#eaeaea;
     --text-color-grey:#fff;
+    --color-white: #fff;
 
     /* notification adv */
     --notif-adv-primary-color:#8edafc;
@@ -31,6 +37,14 @@ img {
 .flex-center {
     justify-content: center;
     align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .align-center {
@@ -80,5 +94,29 @@ img {
 /* CHAT AREA */
 .chat-area {
     height: 100%;
-    background-color: yellow;
+    border-left: var(--border-style);
+    background-image:url(../img/mine.jpg);
+    background-size: contain;
+}
+
+.contact-banner {
+    width: 100%;
+    height: var(--banner-heigth);
+    background-color: var(--primary-grey);
+    padding: var(--user-avatar-pd);
+}
+
+.contact-avatar {
+    width: 14vw;
+}
+
+.chat-contact-info {
+    width: calc(95% - var(--banner-heigth));
+    background-color: aqua;
+}
+
+.input-msg {
+    width: 100%;
+    height: var(--banner-heigth);
+    background-color: var(--primary-grey);
 }
