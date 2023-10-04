@@ -1,8 +1,13 @@
 /* ROOT */
 :root {
     /* COMMON */
-    --avatar-wd: 5vw;
-    --banner-heigth: 6vw;
+    --avatar-wd: 4vw;
+    --banner-heigth: 5vw;
+    --input-msg-heigth: 4vw;
+    --input-msg-pd: 0.5rem 2rem;
+    --user-section-btn-color: #b1b1b1;
+    --user-section-btn-font-size: 1.5rem;
+    --notif-adv-active-link: #5e5e5e;
 
     /* contacts area */
     --wd-contacts-area:40%;
@@ -53,11 +58,13 @@ body {
 }
 
 .user-options {
-    display: block;
-    width: 20%;
-    /* debug */
-    height: 5vw;
-    background-color: aqua;
+    display: flex;
+    width: 30%;
+}
+
+.user-options .user-section-btn {
+    font-size: var(--user-section-btn-font-size);
+    color: var(--user-section-btn-color);
 }
 
 /* notification adv */
@@ -68,16 +75,21 @@ body {
 }
 
 .notif-adv-ico {
+    display: flex;
     width: var(--notif-adv-ico-wd);
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-color: var(--notif-adv-secondary-color) ;
+    background-color: var(--notif-adv-secondary-color);
+    color: var(--notif-adv-primary-color);
+    font-size: var(--user-section-btn-font-size);
 }
 
 .notif-adv-content {
     width: calc(97% - var(--notif-adv-ico-wd));
-    /* debug */
-    background-color: var(--notif-adv-secondary-color);
+}
+
+.notif-adv-content a {
+    color: var(--notif-adv-active-link);
 }
 
 /* contact section */
@@ -107,4 +119,10 @@ body {
 .contact-avatar {
     width: var(--avatar-wd);
     padding: 0;
+}
+
+/* input msg */
+.input-msg{
+    height: var(--input-msg-heigth);
+    padding: var(--input-msg-pd);
 }

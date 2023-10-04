@@ -1,11 +1,16 @@
 /* ROOT */
 :root {
     /* common */
-    --banner-heigth: 13vw;
+    --banner-heigth: 10vw;
+    --contact-avatar-wd: 11vw;
+    --input-msg-heigth: 9vw;
+    --input-msg-icon-font-size:1.5rem;
+
+    /* palette */
+    --input-msg-icon-color: #6b7376;
 
     /* contacts area */
-    --wd-contacts-area: 12.5%;
-
+    --wd-contacts-area: 11vw;
 }
 
 /* COMMON */
@@ -33,6 +38,11 @@
     aspect-ratio: 1/1;
 }
 
+/* notif adv */
+.notif-adv{
+    display: none;
+}
+
 /* contacts section */
 .contacts {
     width: 100%;
@@ -49,6 +59,10 @@
     display: none;
 }
 
+.contact-avatar {
+    width: var(--contact-avatar-wd);
+}
+
 /* CHAT AREA */
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
@@ -57,4 +71,29 @@
 
 .contact-avatar {
     padding: var(--user-avatar-pd);
+}
+
+.text-area {
+    height: calc(100% - var(--banner-heigth) - var(--input-msg-heigth));
+}
+
+/* input msg */
+.input-msg{
+    height: var(--input-msg-heigth);
+}
+
+.emoji-button {
+    display: flex;
+    padding-right: 1rem;
+    font-size: var(--input-msg-icon-font-size);
+    color: var(--input-msg-icon-color);
+    background-color: var(--primary-grey);
+}
+
+.mic-button {
+    display: flex;
+    font-size: var(--input-msg-icon-font-size);
+    color: var(--input-msg-icon-color);
+    margin-left: 1.5rem;
+    background-color: var(--primary-grey);
 }

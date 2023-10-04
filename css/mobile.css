@@ -9,12 +9,17 @@ img {
     max-width:100%;
 }
 
+input:focus-visible{
+    outline: none;
+}
+
 /* ROOT */
 :root {
     /* common */
     --banner-heigth: 16vw;
     --border-style: 1px solid #b0b0b0;
     --user-avatar-pd: 0.4rem 0.7rem;
+    --input-msg-pd: 1rem 1rem;
     
     /* palette */
     --primary-grey:#eaeaea;
@@ -49,8 +54,16 @@ img {
     align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .space-between {
     justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
 
 /* framework */
@@ -65,15 +78,17 @@ img {
     height: 100vh;
 }
 
-/* debug */
-.user-photo {
+
+.contact-photo img {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    /* debug */
-    background-color: aqua;
 }
-/* /debug */
+
+.no-bdr {
+    border: none;
+}
+
 
 /* CONTACTS AREA */
 .contacts-area {
@@ -83,6 +98,12 @@ img {
 /* user section */
 .user-section {
     display: none;
+}
+
+.user-photo img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 
 .user-options {
@@ -113,8 +134,35 @@ img {
     background-color: aqua;
 }
 
+/* text area */
+.text-area {
+    height: calc(100% - 2 * var(--banner-heigth));
+}
+
+/* input msg */
+
 .input-msg {
     width: 100%;
     height: var(--banner-heigth);
     background-color: var(--primary-grey);
+    padding: var(--input-msg-pd);
+}
+
+.emoji-button {
+    display: none;
+}
+
+.input-msg input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0 1rem;
+}
+
+.input-msg input:active {
+    border: none;
+}
+
+.mic-button {
+    display: none;
 }
