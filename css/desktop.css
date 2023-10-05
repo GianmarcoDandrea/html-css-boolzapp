@@ -16,7 +16,7 @@
 
     /* notification adv */
     --notif-adv-primary-color: #8edafc;
-    --notif-adv-secondary-color: #fff;
+    --notif-adv-secondary-color: #ffffff;
     --notif-dv-pd: 0.4rem 0.7rem;
     --notif-adv-ico-wd: 4vw;
     --notif-adv-active-link: #5e5e5e;
@@ -33,7 +33,7 @@
     --hover-effect-color: #f4f5f5;
 
     /* text area */
-   --text-area-padding: 3vw 6vw 0 ;
+    --text-area-padding: 3vw 6vw 0 ;
 
 
     --input-msg-heigth: 4vw;

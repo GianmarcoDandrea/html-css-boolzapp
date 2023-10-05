@@ -56,7 +56,6 @@
 .contacts {
     width: 100%;
     height: calc(100% - var(--wd-contacts-area));
-    overflow-y: scroll;
 }
 
 .contacts-msg {
@@ -95,6 +94,7 @@
 .chat-contact-opt button {
     font-size: var(--chat-contact-btn-font-size);
     color: var(--chat-contact-btn-color);
+    background-color: var(--primary-grey);
 }
 
 /* text area */

@@ -20,10 +20,11 @@ input:focus-visible {
     --border-style: 1px solid #b0b0b0;
     --user-avatar-pd: 0.4rem 0.7rem;
     --input-msg-pd: 0.5rem 0.5rem;
+    --overflow-style: scroll;
 
     /* palette */
     --primary-grey: #eaeaea;
-    --color-white: #fff;
+    --color-white: #ffffff;
     --color-1: #808080;
 
     /* contact-dets */
@@ -34,6 +35,11 @@ input:focus-visible {
 
     /* text area */
     --text-area-padding: 7vw 5vw 0;
+    --msg-box-gap: 1vw;
+    --msg-box-pd: 0.6rem;
+    --send-msg-box-color:#d5f9ba;
+    --received-msg-box-color: #ffffff;
+    --max-width-msg-box: 60%;
 }
 
 /* UTILITIES */
@@ -49,6 +55,10 @@ input:focus-visible {
 
 .flex-column {
     flex-direction: column;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
 }
 
 .flex-wrap {
@@ -71,6 +81,14 @@ input:focus-visible {
     justify-content: space-evenly;
 }
 
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
 /* framework */
 .wd100 {
     width: 100%;
@@ -80,7 +98,6 @@ input:focus-visible {
 
 body {
     font-family: 'Lato', sans-serif;
-    ;
 }
 
 .wrapper,
@@ -93,6 +110,10 @@ body {
 .contact-photo img {
     width: 100%;
     border-radius: 50%;
+}
+
+.ovfl-y {
+    overflow-y: var(--overflow-style);
 }
 
 .no-bdr {
@@ -164,7 +185,59 @@ body {
 /* text area */
 .text-area {
     height: calc(100% - 2 * var(--banner-heigth));
-    padding: var(--text-area-padding) ;
+    padding: var(--text-area-padding);
+    gap: var(--msg-box-gap);
+}
+
+.msg-box {
+    padding: var(--msg-box-pd);
+    border-radius: 3px;
+    max-width: var(--max-width-msg-box);
+}
+
+.msg-box summary {
+    list-style: none;
+}
+
+.send-msg .msg-box {
+    background-color: var(--send-msg-box-color);
+    width: fit-content;
+
+}
+
+.received-msg .msg-box {
+    background-color: var(--received-msg-box-color);
+}
+
+.fa-angle-down {
+    color: var(--color-1);
+}
+
+.msg-time{
+    padding: 0.2rem;
+    text-align: end;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--color-1);
+}
+
+.menu-open {
+    width: 12vw;
+    transform: translateX(-100%);
+    background-color: var(--color-white);
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.info-msg,
+.delete-msg {
+    width: 100%;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+.info-msg:hover,
+.delete-msg:hover {
+    background-color: var(--primary-grey);
 }
 
 /* input msg */
