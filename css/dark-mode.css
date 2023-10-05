@@ -19,9 +19,8 @@
         background-color: #202c33;
     }
 
-    .user-section-btn {
-        color: #aebac1;
-        background-color: #202c33;
+    .user-options .user-section-btn {
+        color:#aebac1;
     }
 
     /********** notification adv ********/
@@ -60,9 +59,12 @@
         background-color: #2a3942;
     }
 
-    .last-msg,
-    .lst-msg-time {
+    .last-msg {
         color: #8696a0;
+    }
+
+    .lst-msg-time{
+        color: #808080;
     }
 
     /**************** CHAT SECTION *****************/

@@ -88,7 +88,7 @@ body {
 .user-options .user-section-btn {
     font-size: var(--user-section-btn-font-size);
     color: var(--user-section-btn-color);
-    background-color: var(--primary-grey);
+    background: none;
 }
 
 /* notification adv */
