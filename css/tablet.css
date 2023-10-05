@@ -4,7 +4,7 @@
     --banner-heigth: 10vw;
     --contact-avatar-wd: 11vw;
     --input-msg-heigth: 9vw;
-    --input-msg-icon-font-size:1.5rem;
+    --input-msg-icon-font-size: 1.5rem;
 
     /* palette */
     --input-msg-icon-color: #6b7376;
@@ -12,6 +12,10 @@
     /* contacts area */
     --wd-contacts-area: 11vw;
     --input-msg-pd: 0.5rem 1rem;
+
+    /* chat contact */
+    --chat-contact-btn-color: #b1b1b1;
+    --chat-contact-btn-font-size: 1.5rem;
 }
 
 /* COMMON */
@@ -39,7 +43,7 @@
 }
 
 /* notif adv */
-.notif-adv{
+.notif-adv {
     display: none;
 }
 
@@ -69,6 +73,7 @@
 }
 
 /* CHAT AREA */
+/* chat contact */
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
     height: 100%;
@@ -78,12 +83,27 @@
     padding: var(--user-avatar-pd);
 }
 
+.chat-contact-info {
+    width: 60%;
+}
+
+.chat-contact-opt {
+    display: flex;
+    width: 30%;
+}
+
+.chat-contact-opt button {
+    font-size: var(--chat-contact-btn-font-size);
+    color: var(--chat-contact-btn-color);
+}
+
+/* text area */
 .text-area {
     height: calc(100% - var(--banner-heigth) - var(--input-msg-heigth));
 }
 
 /* input msg */
-.input-msg{
+.input-msg {
     height: var(--input-msg-heigth);
     padding: var(--input-msg-pd);
 }

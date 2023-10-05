@@ -3,16 +3,18 @@
     /* COMMON */
     --avatar-wd: 4vw;
     /* palette */
-    --color-1:#808080;
+    --color-1: #808080;
 
     /* contacts area */
-    --wd-contacts-area:40%;
+    --wd-contacts-area: 40%;
 
     /* user section */
     --user-section-btn-color: #b1b1b1;
     --user-section-btn-font-size: 1.5rem;
 
     /* notification adv */
+    --notif-adv-primary-color: #8edafc;
+    --notif-adv-secondary-color: #fff;
     --notif-dv-pd: 0.4rem 0.7rem;
     --notif-adv-ico-wd: 4vw;
     --notif-adv-active-link: #5e5e5e;
@@ -39,13 +41,11 @@
 body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(
-        to bottom,
-        #009688 0,
-        #009688 20vh,
-        #d9dbd4 20vh,
-        #d9dbd4 100vh
-      )
+    background: linear-gradient(to bottom,
+            #009688 0,
+            #009688 20vh,
+            #d9dbd4 20vh,
+            #d9dbd4 100vh)
 }
 
 .wrapper {
@@ -66,7 +66,7 @@ body {
 
 /* user section */
 .user-section {
-    background-color:var(--primary-grey);
+    background-color: var(--primary-grey);
     display: flex;
 }
 
@@ -131,11 +131,11 @@ body {
 .src-bar-input input {
     background: transparent;
     border: none;
-    font-size: var(--src-bar-icon-font-size) ;
+    font-size: var(--src-bar-icon-font-size);
     /* padding: 0.5rem 1rem; */
 }
 
-.src-bar-input button{
+.src-bar-input button {
     padding-right: 1rem;
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .last-msg {
-    font-size:var(--last-msg-font-size);
+    font-size: var(--last-msg-font-size);
     color: var(--color-1);
     margin-top: 0.3rem;
 }
@@ -200,7 +200,7 @@ body {
 }
 
 /* input msg */
-.input-msg{
+.input-msg {
     height: var(--input-msg-heigth);
     padding: var(--input-msg-pd);
 }
