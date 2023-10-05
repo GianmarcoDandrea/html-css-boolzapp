@@ -2,6 +2,8 @@
 :root {
     /* COMMON */
     --avatar-wd: 4vw;
+    --banner-heigth: 5vw;
+
     /* palette */
     --color-1: #808080;
 
@@ -30,7 +32,10 @@
     --right-area-pd: 0.8rem 0.3rem;
     --hover-effect-color: #f4f5f5;
 
-    --banner-heigth: 5vw;
+    /* text area */
+   --text-area-padding: 3vw 6vw 0 ;
+
+
     --input-msg-heigth: 4vw;
     --input-msg-pd: 0.5rem 2rem;
 
@@ -197,6 +202,11 @@ body {
 .contact-avatar {
     width: var(--avatar-wd);
     padding: 0;
+}
+
+/* text area */
+.text-area {
+    padding: var(--text-area-padding) ;
 }
 
 /* input msg */

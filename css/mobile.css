@@ -31,6 +31,9 @@ input:focus-visible {
 
     /* last access */
     --lst-access-font-size: 0.9rem;
+
+    /* text area */
+    --text-area-padding: 7vw 5vw 0;
 }
 
 /* UTILITIES */
@@ -161,7 +164,7 @@ body {
 /* text area */
 .text-area {
     height: calc(100% - 2 * var(--banner-heigth));
-
+    padding: var(--text-area-padding) ;
 }
 
 /* input msg */
