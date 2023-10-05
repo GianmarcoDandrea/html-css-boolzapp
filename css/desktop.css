@@ -2,6 +2,8 @@
 :root {
     /* COMMON */
     --avatar-wd: 4vw;
+    /* palette */
+    --color-1:#808080;
 
     /* contacts area */
     --wd-contacts-area:40%;
@@ -19,6 +21,11 @@
     --src-bar-pd: 0.5rem;
     --src-bar-icon-font-size: 1rem;
     --contact-src-bar-heigth: 3.5vw;
+
+    /* contact-dets */
+    --contact-name-font-size: 1.3rem;
+    --last-msg-font-size: 0.9rem;
+    --right-area-pd: 0.8rem 0.3rem;
 
     --banner-heigth: 5vw;
     --input-msg-heigth: 4vw;
@@ -75,6 +82,7 @@ body {
 .user-options .user-section-btn {
     font-size: var(--user-section-btn-font-size);
     color: var(--user-section-btn-color);
+    background-color: var(--primary-grey);
 }
 
 /* notification adv */
@@ -115,7 +123,7 @@ body {
     width: 100%;
     background-color: white;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.5rem;
 }
 
 .src-bar-input button,
@@ -131,7 +139,7 @@ body {
 }
 
 .src-bar-input input {
-    width: 90%;
+    width: 75%;
 }
 
 /* contact section */
@@ -147,9 +155,31 @@ body {
 }
 
 .contact-dets {
+    display: flex;
     width: calc(96% - var(--avatar-wd));
-    /* debug */
-    background-color: aqua;
+}
+
+.left-area {
+    width: 70%;
+}
+
+.contact-name {
+    font-size: var(--contact-name-font-size);
+    font-weight: 500;
+}
+
+.last-msg {
+    font-size:var(--last-msg-font-size);
+    color: var(--color-1);
+    margin-top: 0.3rem;
+}
+
+.right-area {
+    padding: var(--rigth-area-pd);
+}
+
+.lst-msg-time {
+    color: var(--color-1);
 }
 
 /* CHAT AREA */

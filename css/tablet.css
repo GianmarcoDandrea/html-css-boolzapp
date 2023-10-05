@@ -11,6 +11,7 @@
 
     /* contacts area */
     --wd-contacts-area: 11vw;
+    --input-msg-pd: 0.5rem 1rem;
 }
 
 /* COMMON */
@@ -59,7 +60,7 @@
     border-bottom: var(--border-style);
 }
 
-.contacts-dets {
+.contact-dets {
     display: none;
 }
 
@@ -84,6 +85,7 @@
 /* input msg */
 .input-msg{
     height: var(--input-msg-heigth);
+    padding: var(--input-msg-pd);
 }
 
 .emoji-button {
