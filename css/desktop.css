@@ -26,6 +26,7 @@
     --contact-name-font-size: 1.3rem;
     --last-msg-font-size: 0.9rem;
     --right-area-pd: 0.8rem 0.3rem;
+    --hover-effect-color: #f4f5f5;
 
     --banner-heigth: 5vw;
     --input-msg-heigth: 4vw;
@@ -146,8 +147,13 @@ body {
 .contacts {
     height: calc(95% - var(--avatar-wd) - var(--notif-adv-ico-wd) - var(--contact-src-bar-heigth));
 }
+
 .contacts-msg {
     display: flex;
+}
+
+.contacts-msg:hover {
+    background-color: var(--hover-effect-color);
 }
 
 .contact-photo {

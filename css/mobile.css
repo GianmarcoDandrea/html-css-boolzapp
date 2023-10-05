@@ -72,6 +72,10 @@ input:focus-visible{
 }
 
 /* COMMON */
+
+body {
+    font-family: 'Lato', sans-serif;;
+}
 .wrapper,
 .app-container {
     width: 100%;
@@ -130,12 +134,13 @@ input:focus-visible{
 
 .chat-contact-info {
     width: calc(95% - var(--banner-heigth));
-    background-color: aqua;
+    
 }
 
 /* text area */
 .text-area {
     height: calc(100% - 2 * var(--banner-heigth));
+
 }
 
 /* input msg */
