@@ -78,6 +78,7 @@
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
     height: 100%;
+    border-left: var(--border-style);
 }
 
 .contact-avatar {

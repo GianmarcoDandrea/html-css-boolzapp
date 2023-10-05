@@ -146,8 +146,6 @@ body {
 /* chat-contact */
 .chat-area {
     height: 100%;
-    border-left: var(--border-style);
-    background-image: url(../img/mine.jpg);
     background-size: contain;
 }
 
@@ -186,9 +184,11 @@ body {
 
 /* text area */
 .text-area {
-    height: calc(100% - 2 * var(--banner-heigth));
     padding: var(--text-area-padding);
     gap: var(--msg-box-gap);
+    width: 100%;
+    height: calc(100% - 2 * var(--banner-heigth));
+    background-image: url(../img/mine.jpg);
 }
 
 .msg-box {
