@@ -1,4 +1,4 @@
-/* RESET */
+/************************* RESET *************************/
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +13,7 @@ input:focus-visible {
     outline: none;
 }
 
-/* ROOT */
+/************************* ROOT ************************/
 :root {
     /* common */
     --banner-heigth: 16vw;
@@ -43,7 +43,7 @@ input:focus-visible {
     --msg-box-bdr-rad:10px;
 }
 
-/* UTILITIES */
+/******************** UTILITIES ***********************/
 
 .flex-display {
     display: flex;
@@ -95,7 +95,7 @@ input:focus-visible {
     width: 100%;
 }
 
-/* COMMON */
+/************************ COMMON **********************/
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -120,7 +120,7 @@ body {
     border: none;
 }
 
-/* CONTACTS AREA */
+/******************** CONTACTS AREA ********************/
 .contacts-area {
     display: none;
 }
@@ -138,7 +138,7 @@ body {
     display: none;
 }
 
-/* CHAT AREA */
+/*********************** CHAT AREA **********************/
 /* chat-contact */
 .chat-area {
     height: 100%;

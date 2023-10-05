@@ -1,0 +1,27 @@
+/********************** ANIMATION *******************/
+/* ROOT */
+:root {
+    --mic-button-anim-color:#ff0000;
+    --mic-button-anim-bg-color: var(--color-white)
+}
+
+/* KEYFRAMES */
+@keyframes active-mic {
+    0% {
+        color:var(--mic-button-anim-color);
+        background-color: var(--color-white);
+        
+    }
+
+    50% {
+        color:var(--mic-button-anim-color);
+        background-color: var(--color-white);
+        width: 14%;
+    }
+
+    100% {
+        color:var(--mic-button-anim-color);
+        background-color: var(--color-white);
+    }
+    
+}

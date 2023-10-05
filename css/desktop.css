@@ -1,4 +1,4 @@
-/* ROOT */
+/************************** ROOT ************************/
 :root {
     /* COMMON */
     --avatar-wd: 4vw;
@@ -41,7 +41,7 @@
 
 }
 
-/* COMMON */
+/******************* COMMON **********************/
 body {
     width: 100%;
     height: 100vh;
@@ -64,7 +64,7 @@ body {
     height: 90%;
 }
 
-/* CONTACTS AREA */
+/********************* CONTACTS AREA **********************/
 .contacts-area {
     width: var(--wd-contacts-area);
 }
@@ -192,7 +192,7 @@ body {
     color: var(--color-1);
 }
 
-/* CHAT AREA */
+/************************* CHAT AREA *********************/
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
     height: 100%;

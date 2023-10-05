@@ -1,9 +1,9 @@
-/* ROOT */
+/********************** ROOT ***********************/
 :root {
     /* common */
     --banner-heigth: 10vw;
     --contact-avatar-wd: 11vw;
-    --input-msg-heigth: 9vw;
+    --input-msg-heigth: 10vw;
     --input-msg-icon-font-size: 1.5rem;
 
     /* palette */
@@ -18,7 +18,7 @@
     --chat-contact-btn-font-size: 1.5rem;
 }
 
-/* CONTACTS AREA */
+/******************** CONTACTS AREA ********************/
 .contacts-area {
     width: var(--wd-contacts-area);
     height: 100%;
@@ -69,7 +69,7 @@
     width: var(--contact-avatar-wd);
 }
 
-/* CHAT AREA */
+/************************** CHAT AREA *********************/
 /* chat contact */
 .chat-area {
     width: calc(100% - var(--wd-contacts-area));
@@ -102,11 +102,13 @@
 
 /* input msg */
 .input-msg {
+    width: 100%;
     height: var(--input-msg-heigth);
     padding: var(--input-msg-pd);
 }
 
 .emoji-button {
+    width: 10%;
     display: flex;
     padding-right: 1rem;
     font-size: var(--input-msg-icon-font-size);
@@ -116,8 +118,16 @@
 
 .mic-button {
     display: flex;
+    width: 7%;
+    aspect-ratio: 1/1;
     font-size: var(--input-msg-icon-font-size);
     color: var(--input-msg-icon-color);
     margin-left: 1.5rem;
     background-color: var(--primary-grey);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.mic-button:active {
+    animation: active-mic 2s infinite;
 }
