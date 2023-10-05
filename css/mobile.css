@@ -35,7 +35,7 @@ input:focus-visible {
 
     /* text area */
     --text-area-padding: 7vw 5vw 0;
-    --msg-box-gap: 1vw;
+    --msg-box-gap: 15px;
     --msg-box-pd: 0.6rem;
     --send-msg-box-color:#d5f9ba;
     --received-msg-box-color: #ffffff;
@@ -218,7 +218,7 @@ body {
 }
 
 .menu-open {
-    width: 12vw;
+    width: fit-content;
     transform: translateX(-100%);
     background-color: var(--color-white);
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
