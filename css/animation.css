@@ -10,18 +10,52 @@
     0% {
         color:var(--mic-button-anim-color);
         background-color: var(--color-white);
-        
+        width: 7%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;    
+    }
+
+    25% {
+        color:var(--mic-button-anim-color);
+        background-color: var(--color-white);
+        width: 10%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
     }
 
     50% {
         color:var(--mic-button-anim-color);
+        background-color: var(--color-white); 
+        width: 7%;  
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem; 
+    }
+
+    75% {
+        color:var(--mic-button-anim-color);
         background-color: var(--color-white);
-        width: 14%;
+        width: 10%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
     }
 
     100% {
         color:var(--mic-button-anim-color);
         background-color: var(--color-white);
+        width: 7%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
+        
     }
     
 }
