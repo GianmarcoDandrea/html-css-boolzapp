@@ -33,12 +33,11 @@
     --hover-effect-color: #f4f5f5;
 
     /* text area */
-    --text-area-padding: 3vw 6vw 0 ;
+    --text-area-padding: 3vw 6vw 0;
 
-
+    /* input-msg */
     --input-msg-heigth: 4vw;
     --input-msg-pd: 0.5rem 2rem;
-
 
 }
 
@@ -50,7 +49,8 @@ body {
             #009688 0,
             #009688 20vh,
             #d9dbd4 20vh,
-            #d9dbd4 100vh)
+            #d9dbd4 100vh);
+
 }
 
 .wrapper {
@@ -137,7 +137,6 @@ body {
     background: transparent;
     border: none;
     font-size: var(--src-bar-icon-font-size);
-    /* padding: 0.5rem 1rem; */
 }
 
 .src-bar-input button {
@@ -199,6 +198,7 @@ body {
     height: 100%;
 }
 
+/* chat-contact */
 .contact-avatar {
     width: var(--avatar-wd);
     padding: 0;
@@ -206,7 +206,7 @@ body {
 
 /* text area */
 .text-area {
-    padding: var(--text-area-padding) ;
+    padding: var(--text-area-padding);
 }
 
 /* input msg */

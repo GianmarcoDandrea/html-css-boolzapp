@@ -95,7 +95,6 @@ input:focus-visible {
 }
 
 /* COMMON */
-
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -120,7 +119,6 @@ body {
     border: none;
 }
 
-
 /* CONTACTS AREA */
 .contacts-area {
     display: none;
@@ -139,9 +137,8 @@ body {
     display: none;
 }
 
-
-
 /* CHAT AREA */
+/* chat-contact */
 .chat-area {
     height: 100%;
     border-left: var(--border-style);
@@ -202,7 +199,6 @@ body {
 .send-msg .msg-box {
     background-color: var(--send-msg-box-color);
     width: fit-content;
-
 }
 
 .received-msg .msg-box {
@@ -241,7 +237,6 @@ body {
 }
 
 /* input msg */
-
 .input-msg {
     width: 100%;
     height: var(--banner-heigth);
