@@ -2,7 +2,8 @@
 /* ROOT */
 :root {
     --mic-button-anim-color:#ff0000;
-    --mic-button-anim-bg-color: var(--color-white)
+    --mic-button-anim-bg-color: var(--color-white);
+    --margin-bottom: 0.25rem;
 }
 
 /* KEYFRAMES */
@@ -12,9 +13,9 @@
         background-color: var(--color-white);
         width: 7%;
         position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 1rem;    
+        bottom: calc(var(--mic-btn-width) / 2);
+        right: calc(var(--mic-btn-width) / 2);
+        margin-bottom: var(--margin-bottom);
     }
 
     25% {
@@ -22,9 +23,9 @@
         background-color: var(--color-white);
         width: 10%;
         position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 1rem;
+        bottom: calc(var(--mic-btn-width) / 2);
+        right: calc(var(--mic-btn-width) / 2);
+        margin-bottom: var(--margin-bottom);
     }
 
     50% {
@@ -32,9 +33,9 @@
         background-color: var(--color-white); 
         width: 7%;  
         position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 1rem; 
+        bottom: calc(var(--mic-btn-width) / 2);
+        right: calc(var(--mic-btn-width) / 2);
+        margin-bottom: var(--margin-bottom);
     }
 
     75% {
@@ -42,9 +43,9 @@
         background-color: var(--color-white);
         width: 10%;
         position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 1rem;
+        bottom: calc(var(--mic-btn-width) / 2);
+        right: calc(var(--mic-btn-width) / 2);
+        margin-bottom: var(--margin-bottom);
     }
 
     100% {
@@ -52,10 +53,9 @@
         background-color: var(--color-white);
         width: 7%;
         position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 1rem;
-        
+        bottom: calc(var(--mic-btn-width) / 2);
+        right: calc(var(--mic-btn-width) / 2);  
+        margin-bottom: var(--margin-bottom);
     }
     
 }

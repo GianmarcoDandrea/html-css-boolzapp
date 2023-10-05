@@ -112,7 +112,7 @@
 }
 
 .input-msg input {
-    width: calc(100% - var(--emoji-btn-width) - var(--mic-btn-width));
+    width: calc(100% - var(--emoji-btn-width) - var(--mic-btn-width) - var(--input-msg-icon-font-size));
 }
 
 .emoji-button {
