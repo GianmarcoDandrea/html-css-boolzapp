@@ -41,7 +41,7 @@ input:focus-visible {
     --received-msg-box-color: #ffffff;
     --max-width-msg-box: 60%;
     --msg-box-bdr-rad:10px;
-    --menu-open-font-size: 0.9rem
+    --menu-open-font-size: 0.9rem;
 }
 
 /******************** UTILITIES ***********************/
