@@ -137,6 +137,8 @@
     padding: 0.5rem;
 }
 
+/********************** ANIMATION *******************/
+
 .mic-button:active {
-    animation: active-mic 3s infinite;
+    animation: active-mic 2s infinite;
 }

@@ -18,27 +18,7 @@
         margin-bottom: var(--margin-bottom);
     }
 
-    25% {
-        color:var(--mic-button-anim-color);
-        background-color: var(--color-white);
-        width: 10%;
-        position: absolute;
-        bottom: calc(var(--mic-btn-width) / 2);
-        right: calc(var(--mic-btn-width) / 2);
-        margin-bottom: var(--margin-bottom);
-    }
-
     50% {
-        color:var(--mic-button-anim-color);
-        background-color: var(--color-white); 
-        width: 7%;  
-        position: absolute;
-        bottom: calc(var(--mic-btn-width) / 2);
-        right: calc(var(--mic-btn-width) / 2);
-        margin-bottom: var(--margin-bottom);
-    }
-
-    75% {
         color:var(--mic-button-anim-color);
         background-color: var(--color-white);
         width: 10%;
@@ -50,12 +30,11 @@
 
     100% {
         color:var(--mic-button-anim-color);
-        background-color: var(--color-white);
-        width: 7%;
+        background-color: var(--color-white); 
+        width: 7%;  
         position: absolute;
         bottom: calc(var(--mic-btn-width) / 2);
-        right: calc(var(--mic-btn-width) / 2);  
+        right: calc(var(--mic-btn-width) / 2);
         margin-bottom: var(--margin-bottom);
-    }
-    
+    }    
 }
