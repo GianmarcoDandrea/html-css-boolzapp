@@ -45,6 +45,10 @@
         background-color: #111b21;
     }
 
+    .src-bar-input button {
+        color: #85959f;
+    }
+
     .src-bar-input {
         background-color: #202c33;
         color: #8696a0;
