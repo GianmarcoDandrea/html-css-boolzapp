@@ -1,8 +1,8 @@
 /********************** ROOT ***********************/
 :root {
     /* common */
-    --banner-heigth: 10vw;
-    --contact-avatar-wd: 11vw;
+    --banner-heigth: 80px;
+    --contact-avatar-wd: var(--banner-heigth);
     --input-msg-heigth: 3.5rem;
     --input-msg-icon-font-size: 1.5rem;
 
@@ -10,7 +10,7 @@
     --input-msg-icon-color: #6b7376;
 
     /* contacts area */
-    --wd-contacts-area: 11vw;
+    --wd-contacts-area: var(--banner-heigth);
     --input-msg-pd: 0.5rem 1rem;
 
     /* chat contact */
@@ -34,7 +34,7 @@
 .user-section {
     height: var(--banner-heigth);
     padding: var(--user-avatar-pd);
-    display: block;
+    display: flex;
     background-color: var(--primary-grey);
 }
 

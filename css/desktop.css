@@ -1,8 +1,8 @@
 /************************** ROOT ************************/
 :root {
     /* COMMON */
-    --avatar-wd: 4vw;
-    --banner-heigth: 5vw;
+    --avatar-wd: calc(var(--banner-heigth) - 15px);
+    --banner-heigth: 80px;
 
     /* palette */
     --color-1: #808080;
@@ -18,13 +18,13 @@
     --notif-adv-primary-color: #8edafc;
     --notif-adv-secondary-color: #ffffff;
     --notif-dv-pd: 0.4rem 0.7rem;
-    --notif-adv-ico-wd: 4vw;
+    --notif-adv-ico-wd: 60px;
     --notif-adv-active-link: #5e5e5e;
 
     /* search bar */
     --src-bar-pd: 0.5rem;
     --src-bar-icon-font-size: 1rem;
-    --contact-src-bar-heigth: 3.5vw;
+    --contact-src-bar-heigth: 45px;
 
     /* contact-dets */
     --contact-name-font-size: 1.3rem;
